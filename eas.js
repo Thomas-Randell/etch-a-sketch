@@ -15,5 +15,6 @@ for (let i = 0; i < gridSize; i++) {
 
 grid.forEach(square => container.appendChild(square));
 
-console.log(containerWidth);
-console.log(div.style.width)
+grid.forEach(square => square.addEventListener("mouseover", function () {
+    square.style.background = "black";
+}))
