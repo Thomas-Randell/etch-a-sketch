@@ -1,3 +1,7 @@
+body {
+    text-align: center;
+}
+
 .container {
     box-sizing: content-box;
     margin: 32px 16px;
@@ -14,7 +18,10 @@
 
 .square {
     box-sizing: border-box;
+    margin: 0px;
+}
+
+.grid {
     border: solid;
     border-width: 1px;
-    margin: 0px;
 }

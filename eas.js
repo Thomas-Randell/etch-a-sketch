@@ -24,10 +24,17 @@ function resetGrid() {
 
 gridSetup(16)
 
-btn = document.querySelector("button")
-btn.addEventListener("click", function () {
+btn1 = document.querySelector(".sizebtn")
+btn1.addEventListener("click", function () {
     let userChoice = prompt("How many squares per side?")
     resetGrid()
     gridSetup(userChoice)
 })
+
+btn2 = document.querySelector(".gridtgl")
+btn2.addEventListener("click", function () {
+    let squares = document.querySelectorAll(".square")
+    squares.forEach(square => square.classList.toggle("grid"))
+})
+
 
